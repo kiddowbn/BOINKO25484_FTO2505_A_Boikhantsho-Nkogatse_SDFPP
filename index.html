@@ -6,518 +6,25 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<!--styles css-->
-<style>
-
-
-
- /* Reset and Base Styles */
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.5;
-            color: #333;
-            background-color: #f8f8f8;
-            padding: 20px;
-        }
-        
-    
-
-
- /* Container */
- .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-  
-
-
-
- /* Profile Section */
-  .profile {
-  background-color: #FFFFFF;
-            padding: 24px;
-            border-radius: 12px;
-            box-shadow: 0 2px 3px rgba(218, 218, 218, 0.5);
-            margin-bottom: 24px;
-            display: flex;
-            gap: 24px;
-            align-items: flex-start;
-        }
-  .profile-img-container {
-            width: 144px;
-            height: 144px;
-            border-radius: 24px;
-            background-color: #ddd;
-            overflow: hidden;
-        }
-        
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .profile-info {
-            flex: 1;
-        }
-        
-  .profile-name {
-     font-size: 22px;
-     color: #4A4A4A;
-     line-height: 24px;
-     max-width: 520px;
-
-      }
-      .profile-bio {
-            font-size: 16px;
-            color: #4A4A4A;
-            line-height: 24px;
-            max-width: 520px;
-        }
-
- /* Proficiency Section */
-  .proficiency {
-            background-color: #FFFFFF;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 2px rgba(218, 218, 218, 0.5);
-            margin-bottom: 24px;
-        }
-        
-        .section-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: #000;
-        }
-        
-        .proficiency-levels {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-        
-        .proficiency-level {
-            font-size: 14px;
-            font-weight: 700;
-        }
-   .proficiency-item {
-            margin-bottom: 20px;
-        }
-        
-        .proficiency-label {
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-        
-        .proficiency-bar-container {
-            width: 100%;
-            height: 6px;
-            background-color: #f0f0f0;
-            border-radius: 3px;
-            overflow: hidden;
-        }
-        
-   .proficiency-bar {
-            height: 100%;
-            background-color: #396B5E;
-            border-radius: 3px;
-        }
-        
-        .javascript-bar {
-            width: 80%;
-        }
-        .react-bar {
-            width: 80%;
-        }
-        
-        .nodejs-bar {
-            width: 60%;
-        }
-        
-        .htmlcss-bar {
-            width: 70%;
-        }
-             
-
- /* Skills Section */
-
-  .skills {
-            background-color: #FFFFFF;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 2px rgba(218, 218, 218, 0.5);
-            margin-bottom: 24px;
-        }
-        
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        
-        .skill-tag {
-            background-color: #ECF4F1;
-            padding: 8px 14px;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
- 
- /* Projects Section */
-   .projects {
-            margin-bottom: 24px;
-        }
-        
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-        
-        .project-card {
-            background-color: #FFFFFF;
-            border-radius: 12px;
-            box-shadow: 0 2px 2px rgba(218, 218, 218, 0.5);
-            padding: 16px;
-            height: 360px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .project-card.featured {
-            background-color: #2E6E5B;
-            color: #FFFFFF;
-        }
-     .project-year {
-            font-size: 14px;
-            margin-bottom: 8px;
-            color: inherit;
-        }
-        
-        .project-name {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: inherit;
-        }
-        
-        .project-brief {
-            font-size: 14px;
-            margin-bottom: 12px;
-            line-height: 18px;
-            color: inherit;
-        }
-        
-        .project-technologies {
-            font-size: 14px;
-            margin-bottom: 12px;
-            color: inherit;
-        }
-      .project-responsibilities {
-            font-size: 14px;
-            line-height: 18px;
-            color: inherit;
-        }
-        
-        .project-card.featured .project-brief,
-        .project-card.featured .project-technologies,
-        .project-card.featured .project-responsibilities {
-            color: #FFFFFF;
-        }
-            
-        
-
- /* Education Section */
-   .education {
-            margin-bottom: 24px;
-        }
-        
-        .education-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            width: 60%;
-            margin: 0 auto;
-        }
-        
-        .education-card {
-            background-color: #FFFFFF;
-            border-radius: 12px;
-            box-shadow: 0 2px 2px rgba(218, 218, 218, 0.5);
-            padding: 16px;
-            height: 160px;
-        }
-        
-        .education-card.featured {
-            background-color: #2E6E5B;
-            color: #FFFFFF;
-        }
-    .education {
-            margin-bottom: 24px;
-        }
-        
-        .education-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            width: 60%;
-            margin: 0 auto;
-        }
-        
-        .education-card {
-            background-color: #FFFFFF;
-            border-radius: 12px;
-            box-shadow: 0 2px 2px rgba(218, 218, 218, 0.5);
-            padding: 16px;
-            height: 160px;
-        }
-        
-        .education-card.featured {
-            background-color: #2E6E5B;
-            color: #FFFFFF;
-        }
-        .education-details li {
-            margin-bottom: 4px;
-        }
-        
-
-
- /* Experience Section */
-  .experience {
-    margin-bottom: 24px;
-
-   } 
-  .experience-list { 
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-   }
-   
-   .experience-card {
-            background-color: #FFFFFF;
-            border-radius: 12px;
-            box-shadow: 0 2px 2px rgba(218, 218, 218, 0.5);
-            padding: 16px;
-        }
-        
-        .experience-period {
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-        
-        .experience-position {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-            .experience-company {
-            font-size: 14px;
-            margin-bottom: 12px;
-            font-style: italic;
-        }
-        
-        .experience-details {
-            font-size: 14px;
-            line-height: 18px;
-            padding-left: 16px;
-        }
-        
-        .experience-details li {
-            margin-bottom: 4px;
-        }
-        
- 
-/* Tools Section */
-.tools {
-            background-color: #FFFFFF;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 2px rgba(218, 218, 218, 0.5);
-            margin-bottom: 24px;
-        }
-        
-        .tools-categories {
-            display: flex;
-            gap: 20px;
-        }
-        
-        .tools-category {
-            flex: 1;
-        }
-        
-        .tools-category-title {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .tools-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-      .tool-item {
-            font-size: 14px;
-        }
-        
-
- /* Footer Section */
-        .footer {
-            text-align: center;
-            padding: 24px 0;
-        }
-        
-        .footer-message {
-            font-size: 16px;
-            margin-bottom: 16px;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-        }
-        
-        .footer-link {
-            color: #396B5E;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        
-
- /* Responsive Styles */
-
-  @media (max-width: 1024px) {
-            .projects-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .education-list {
-                width: 80%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .profile {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            
-            .profile-img-container {
-                width: 96px;
-                height: 96px;
-            }
-            
-            .profile-name {
-                font-size: 18px;
-            }
-            
-            .profile-bio {
-                font-size: 14px;
-            }
-            
-            .proficiency-and-skills {
-                flex-direction: column;
-            }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .project-card {
-                height: auto;
-            }
-            
-            .education-list {
-                width: 100%;
-            }
-            .education-card {
-                height: auto;
-            }
-            
-            .tools-categories {
-                flex-direction: column;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .profile {
-                padding: 16px;
-            }
-            
-            .section-title {
-                font-size: 16px;
-            }
-            .proficiency-level {
-                font-size: 12px;
-            }
-            
-            .skill-tag {
-                font-size: 12px;
-                padding: 6px 12px;
-            }
-            
-            .project-name,
-            .education-institution,
-            .experience-position {
-                font-size: 16px;
-            }
-            
-            .project-brief,
-            .project-technologies,
-            .project-responsibilities,
-            .education-degree,
-            .experience-company,
-            .experience-details {
-                font-size: 12px;
-            }
-            
-            .education-details {
-                font-size: 11px;
-            }
-.footer-message {
-                font-size: 14px;
-            }
-            
-            .footer-links {
-                flex-wrap: wrap;
-            }
-        }
-        
-        
-</style>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <!---->
 
 <body>
-<div class="container">   
+  
 
  <!--Profile section-->
  <header class="profile">
-
+<div class="container"> 
+    <div class="profile-image-wrapper">
      <!--Profile img-->
             <div class="profile-img-container">
-                <img class="profile-img" src="WhatsApp Image 2025-06-10 at 09.43.35.jpeg" alt="Profile Image">
+                <img class="profile-img" src="WhatsApp Image 2025-06-10 at 09.43.35.jpeg" alt="Profile Image ">
              </div>
 
              <!--Name Surname-->
-            <div class="profile-info">
+            <div class="profile-content">
               <h1 class="profile-name">Name Surname</h1>
                 <p class="profile-bio">
                    Im a passionate aspairing fullstack developer and dedicated with a strong 
@@ -526,51 +33,52 @@
                     Im willing to learn and work 
                </p>
             </div>
+
+            </div>
         </header>
 
  <!--Proficency-->
-
- <section class="proficiency"></section>
+ <section class="proficiency-skills-wrapper">
+ <div class="proficiency-section">
     <h2 class="section-title">Proficiency</h2>
       <div class="proficiency-levels"></div>
           <span class="proficiency-level"></span>Beginner</span>
           <span class="proficiency-level"></span>Intermedate </span>
            <span class="proficiency-level"></span>Advance* </span>
       </div>
+<div class="proficiency-bars">
+                <div class="skill-bar">
+                    <span class="skill-name">Java</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-name">html5 & CSS3</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 45%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-name">GitHub</span>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-             <div class="proficiency-item">
-                 <div class="proficiency-label">java</div>
-                 <div class="proficiency-bar-container">
-                 <div class="proficiency-bar java-bar"></div>
-                </div>
-            </div>
-      
-          <div class="proficiency-item">
-                 <div class="proficiency-label">html+css</div>
-                 <div class="proficiency-bar-container">
-                 <div class="proficiency-bar html+css-bar"></div>
-                </div>
-            </div>
-          
-          <div class="proficiency-item">
-                 <div class="proficiency-label">JavaScript</div>
-                 <div class="proficiency-bar-container">
-                 <div class="proficiency-bar javascript-bar"></div>
-                </div>
-            </div>
-
-         <div class="proficiency-item">
-                 <div class="proficiency-label">github</div>
-                 <div class="proficiency-bar-container">
-                 <div class="proficiency-bar github-bar"></div>
-                </div>
-            </div>
  
- </section>
  <!--Skill-->
  <section class="Skills">
     <h2 class ="section-title">Skills</h2>
-    <div>
+    <div class="skills-container">
       <span class="skill-tag"></span>softwere development</span>
       <span class="skill-tag"></span>web development </span>
       <span class="skill-tag"></span>exel</span>
@@ -586,145 +94,203 @@
   <section class="projects">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
+              
+              
                 <!-- Featured Project -->
-              <article class="project-card featured"></article>
+              <article class="project-card featured">
               <div class="project-year"> 2025</div>
 
-               Portfolio Website
+                <h3 class="project-name">Portfolio Website</h3>
    
-               Brief:
+               <p class="project-brief">Developed a personal portfolio website to showcase projects and skills.</p>
+                    <p class="project-technologies">Technologies: VS code, JavaScript, HTML, CSS</p>
+                    <p class="project-responsibilities">Responsibilities: Designed and implemented the website, ensured a comprehensive and accessibility.</p>
+                </article>
+              
+              
+                <!-- Other Projects -->
+                 <article class="project-card">
+             <div class="project-year">2025</div>
+            
 
-              Developed a personal portfolio website to showcase projects and skills.
- 
-              Technologies: 
+              <h3 class="project-name">footer</h3>
 
-              vs code, JavaScript, HTML, CSS
-
-              Responsibilities:
-
-              Designed and implemented the website, ensured
-              responsiveness one accessibility.
-
-              2025
-
-              footer
-
-              Brief: 
+              <p class="project-brief">Brief: 
 
               Developed a footer that allows users to input email,
-              and makes animation when you press buttons
+              and makes animation when you press buttons</p>
 
-              Technologies:
+               <p class="project-technologies">Technologies:
 
-              vs code, Tailwind, HTML, CSS.
+              vs code, Tailwind, HTML, CSS.</p>
 
-              Responsibilities:
-              input GUi and animations shown and logs in user by inputing email
+              <p class="project-responsibilities">Responsibilities:
+              input GUi and animations shown and logs in user by inputing email</p>
+            
+              </article>
 
-              2025
+            <article class="project-card">
+              <div class="project-year">2025</div>
 
-              Agile Board
+              <h3 class="project-name">Agile Board</h3>
 
-              Brief: 
+              <p class="project-brief">Brief: 
 
               Developed a
               management tool for
               incredible application
               organizing and tracking
-              that allows users to  track jornal
+              that allows users to  track jornal</p>
 
-              Technologies:
+               <p class="project-technologies">Technologies:
 
               JavaScript, HTML, CSS
-              Tailwind
+              Tailwind</p>
 
-              Responsibilities:
-              document user words acts as a journal and GUI sanner to enter uer info
+              <p class="project-responsibilities">Responsibilities:
+              document user words acts as a journal and GUI sanner to enter uer info</p>
+            </article>
 
-              2025
+            <article class="project-card">  
+              <div class="project-year">2025</div>
 
-             Super cool project
+             <h3 class="project-name">Super cool project</h3>
 
-             brief:
+             <p class="project-brief">brief:
              Developed web page of store where it allows user to see products and go through page 
-             and shop
+             and shop</p>
 
-             Technologies:
+              <p class="project-technologies">Technologies:
 
              JavaScript, HTML, CSS
-             Tailwind
+             Tailwind</p>
 
 
-              Responsibilities:
-              designed pages from css and html that swiches pages to difrent parts of website for shoping expierance
-
+              <p class="project-responsibilities">Responsibilities:
+              designed pages from css and html that swiches pages to difrent parts of website for shoping expierance</p>
+           </article> 
 
  <!--Education-->
- Education
+  <section class="education">
+   <h2 class="section-title">Education</h2>
+   <div class="education-list">
 
- Mar. 2026 - Jun. 2026
- CoolSpaces Academy
+       <!-- Most Recent Education -->
 
- web devrlopment
+       <article class="education-card featured">
+          <div class="education-period">Mar. 2026 - Jun. 2026</div>
+         <h3 class="education-institution"></h3>CoolSpaces Academy</h3>
 
- Focused on HTML and CSS to build intuitive, dynamic web Sites
- Collaborated with peer on real-world personal projects, refining teamwork and coding best practices
- Started for start-on experience with cutting-edge web technologies and development tools
+         <p class="education-degree">web devrlopment</p>
+          <ul class="education-details">
+              <li> Focused on HTML and CSS to build intuitive, dynamic web Sites</li>
+               <li>Collaborated with peer on real-world personal projects, refining teamwork and coding best practices</li>
+               <li>Started for start-on experience with cutting-edge web technologies and development tools</li>
+            </ul>    
+       </article>
+       
+        <!-- Other Education -->
+       <article class="education-card">
+          <div class="education-period">feb. 2026 - Jun. 2026</div>
+          <h3 class="education-institution">boston city campus</h3>
 
- feb. 2026 - Jun. 2026
- boston city campus
+          <p class="education-degree">Advanced Development Platforms</p>
+           <ul class="education-details">
+               <li> Focused on java to build intuitive, web applications from bach end </li>
+                <li>Collaborated with peer on real-world personal projects, refining teamwork and coding best practices</li>
+               <li> Started for start-on experience with cutting-edge web technologies and development toolsAug.</li>
+            </ul>    
+       </article>
+       <article class="education-card">
+         <div class="education-period">Jan. 2020 - Dec. 2024</div>
+         <h3 class="education-institution">Hoerskool patriot</h3>
 
- Advanced Development Platforms
-
- Focused on java to build intuitive, web applications from bach end 
- Collaborated with peer on real-world personal projects, refining teamwork and coding best practices
- Started for start-on experience with cutting-edge web technologies and development toolsAug.
-
- Jan. 2020 - Dec. 2024
- hoerskool patriot
-
- Matric | NQF Level 4
-
- Built core academic skills and developed an early passion for problem-solving
- Participated in school-wide projects that honed creative and analytical thinking
-
+          <p class="education-degree">Matric | NQF Level 4</p>
+            <ul class="education-details">
+               <li>Built core academic skills and developed an early passion for problem-solving</li>
+                <li>Participated in school-wide projects that honed creative and analytical thinking</li>
+            </ul>
+       </article> 
+       </div>
+     </section>
 
  <!--tool-->
+ <section class="tools">
+            <h2 class="section-title">Tools</h2>
+            <div class="tools-categories">
+                <div class="tools-category">
+                    <h3 class="tools-category-title">Languages</h3>
+                    <div class="tools-list">
+                        <span class="tool-item">JavaScript</span>
+                        <span class="tool-item">HTML</span>
+                        <span class="tool-item">CSS</span>
+                    </div>
+                </div>
+                <div class="tools-category">
+                    <h3 class="tools-category-title">design</h3>
+                    <div class="tools-list">
+                        <span class="tool-item">React</span>
+                        <span class="tool-item">Node.js</span>
+                        <span class="tool-item">Tailwind</span>
+                    </div>
+                </div>
+                 <div class="tools-category">
+                    <h3 class="tools-category-title">Tools</h3>
+                    <div class="tools-list">
+                        <span class="tool-item">Git</span>
+                        <span class="tool-item">VS Code</span>
+                        <span class="tool-item">Figma</span>
+                    </div>
+                </div>
+            </div>
+ </section>
+
 
  <!--Expierance-->
-  Expierance
+  
+ 
+ <section class="Expierance">
 
- March. 2024 - July. 2024
- Bookstore Clerk
- lellys books | part-time
-
- Organized and shared new arrivals, ensuring a clean and enticing store layout
- Assisted customers with personalized book recommendations, boosting sales
- Handled point-of-sale transactions and updated inventory records
-
- Feb. 2021 - July. 2021
- video editor
- timmy yt ltdy | part-time
-
- Organized and edited videos, ensuring rules were folowed and 
- Assisted customers with personalized recommendations, boosting sales
- Handled point-of-sale transactions and updated video systerm and output of SOE for buisness
-
-
- Dec. 2024 - Dec. 2024
- cleaner
- MC Donalds | Full-time
-
- Obtain temporary contract , ensuring a clean and enticing store and washing dishes
- Assisted customers with problems in cleaning facilities and product, boosting moral
- of staff and worked as a team with 100% atendence and no negetive review
+ <article class="experience-card">
+      <div class="experience-period">March. 2024 - July. 2024</div>
+       <h3 class="experience-position">Bookstore Clerk</h3>
+        <p class="experience-company">lellys books | part-time</p>>
+       <ul class="experience-details">
+              <li>Organized and shared new arrivals, ensuring a clean and enticing store layout</li>
+              <li>Assisted customers with personalized book recommendations, boosting sales</li>
+              <li>Handled point-of-sale transactions and updated inventory records</li>
+       </ul>
+ </article>
+ <article class="experience-card">>
+        <div class="experience-period">Feb. 2021 - July. 2021</div>
+        <h3 class="experience-position">video editor</h3>
+        <p class="experience-company">timmy yt ltdy | part-time</p>  
+        <ul class="experience-details">
+            <li> Organized and edited videos, ensuring rules were folowed and </li>
+            <li> Assisted customers with personalized recommendations, boosting sales</li>
+            <li> Handled point-of-sale transactions and updated video systerm and output of SOE for buisness</li>
+        </ul>
+ </article>
+ <article class="experience-card">
+    
+          <div class="experience-period">Dec. 2024 - Jan. 2025</div>
+           <h3 class="experience-position">cleaner</h3>
+           <p class="experience-company">MC Donalds | Full-time</p>
+          <ul class="experience-details">
+             <li>Obtain temporary contract , ensuring a clean and enticing store and washing dishes</li>
+             <li>Assisted customers with problems in cleaning facilities and product</li>
+             <li>boosting moral of staff and worked as a team with 100% atendence and no negetive review</li>
+ 
+       </ul>
+    </article>
+</section>
 
  <!--footer-->   
 
   <footer class="footer">
             <p class="footer-message">Let's chat! I'm ready to work on exciting projects.</p>
             <div class="footer-links">
-                <a href="mailto:namesurname@gmail.com" class="footer-link">nkogatseboikhantsho555@gmail.com |</a>
+                <a href="mailto:nkogatseboikhantsho555@gmail.com" class="footer-link">nkogatseboikhantsho555@gmail.com |</a>
                 <a href="tel:0723456789" class="footer-link">072 345 6789 |</a>
                 <a href="#" class="footer-link">LinkedIn Link |</a>
                 <a href="#" class="footer-link">GitHub Link |</a>
@@ -732,6 +298,7 @@
   </footer>
 
 </div>
+
 </body>
 
 
